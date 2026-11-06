@@ -1,13 +1,14 @@
 # @trysac/idempotency-keys
 
-> Idempotency-Key middleware for Node HTTP servers following the IETF draft: request fingerprinting, response replay, in-flight locking and pluggable storage TypeScript library for Node.js 20+, published as ES modules with type declarations. MIT.
+> Idempotency-Key middleware for Node HTTP servers following draft-ietf-httpapi-idempotency-key-header: key parsing, request fingerprinting, response replay, in-flight locking and pluggable storage. TypeScript library for Node.js 20+, published as ES modules with type declarations. No runtime dependencies. MIT.
 
 ## Docs
 
-- [README](README.md): problem, installation and usage example
+- [README](README.md): problem, installation, usage example and API summary
 - [AGENTS.md](AGENTS.md): commands, folder map, conventions and limits for contributors and agents
-- [Architecture](docs/ARCHITECTURE.md): modules and boundaries
-- [Testing](docs/TESTING.md): how tests and coverage work
+- [Architecture](docs/ARCHITECTURE.md): modules, boundaries and request flow
+- [Security](docs/SECURITY.md): threat model and security practices
+- [Testing](docs/TESTING.md): test files and coverage
 - [Decisions](docs/decisions/0001-record-architecture-decisions.md): architecture decision records
 
 ## Optional
