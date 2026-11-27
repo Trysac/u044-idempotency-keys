@@ -1,7 +1,6 @@
 # idempotency-keys
 
-[![npm version](https://img.shields.io/npm/v/@trysac/idempotency-keys.svg)](https://www.npmjs.com/package/@trysac/idempotency-keys)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/idempotency-keys.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u044-idempotency-keys/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u044-idempotency-keys/actions/workflows/ci.yml)
 
 Idempotency-Key middleware for Node HTTP servers following draft-ietf-httpapi-idempotency-key-header: request fingerprinting, response replay, in-flight locking and pluggable storage.
@@ -12,9 +11,15 @@ Clients retry POST requests after timeouts and create duplicate payments or orde
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/idempotency-keys
+git clone https://github.com/Trysac/u044-idempotency-keys.git
+cd u044-idempotency-keys && npm ci && npm run build
+cd ../your-project && npm install ../u044-idempotency-keys
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/idempotency-keys"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations and has no runtime dependencies.
 
